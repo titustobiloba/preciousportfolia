@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presh Visuals | Photography Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS Styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary">
+        <div class="container">
+            <a class="navbar-brand fw-bold tracking-widest text-uppercase" href="index.html">Presh Visuals</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-sm btn-outline-light rounded-0 text-uppercase tracking-wider px-3 py-2" href="booking.html">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="min-vh-100 d-flex align-items-center justify-content-center text-center position-relative" 
+            style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1600') center/cover no-repeat;">
+        <div class="container">
+            <h1 class="display-3 fw-bold text-uppercase tracking-wide mb-2">Presh Visuals</h1>
+            <p class="lead text-secondary-emphasis tracking-wider mb-4">Capturing moments that feel like you.</p>
+            <a href="booking.html" class="btn btn-light btn-lg px-4 rounded-0 text-uppercase tracking-wider fw-bold">Book a Session</a>
+        </div>
+    </header>
+
+    <!-- Short Intro Section -->
+    <section class="py-5 bg-black-50 text-center border-bottom border-secondary">
+        <div class="container py-4 max-w-md">
+            <span class="text-uppercase tracking-widest text-secondary small d-block mb-3">The Creative Eye</span>
+            <p class="fs-4 fw-light text-light mb-3">Hi, I’m Precious, The creative eye behind Presh Visuals.</p>
+            <p class="text-secondary mb-0">I specialize in capturing soft, stylish, and timeless images that tell your story beautifully.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 mt-4">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-uppercase fw-bold tracking-wide">My Work</h2>
+                <div class="hr-line mx-auto bg-light my-3" style="width: 50px; height: 2px;"></div>
+                <p class="text-secondary small">A curated collection of my favorite moments — real people, real emotions, beautifully captured.</p>
+                
+                <!-- Advanced Segment Control Filter -->
+                <div class="btn-group filter-button-group mt-3" role="group">
+                    <button type="button" class="btn btn-sm btn-outline-light active rounded-0" data-filter="all">All</button>
+                    <button type="button" class="btn btn-sm btn-outline-light rounded-0" data-filter="portraits">Portraits</button>
+                    <button type="button" class="btn btn-sm btn-outline-light rounded-0" data-filter="events">Events</button>
+                    <button type="button" class="btn btn-sm btn-outline-light rounded-0" data-filter="studio">Studio</button>
+                    <button type="button" class="btn btn-sm btn-outline-light rounded-0" data-filter="graduation">Graduation / Thanksgiving</button>
+                </div>
+            </div>
+
+            <!-- Mosaic Photo Target Array -->
+            <div class="row g-4 id-gallery-grid">
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="portraits">
+                    <div class="overflow-hidden position-relative img-hover-box"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600" class="img-fluid w-100 transition-transform" alt="Portrait Work"></div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="events">
+                    <div class="overflow-hidden position-relative img-hover-box"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=600" class="img-fluid w-100 transition-transform" alt="Event Work"></div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="studio">
+                    <div class="overflow-hidden position-relative img-hover-box"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600" class="img-fluid w-100 transition-transform" alt="Studio Setup"></div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="graduation">
+                    <div class="overflow-hidden position-relative img-hover-box"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=600" class="img-fluid w-100 transition-transform" alt="Graduation Capture"></div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="portraits">
+                    <div class="overflow-hidden position-relative img-hover-box"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600" class="img-fluid w-100 transition-transform" alt="Portrait Work"></div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="events">
+                    <div class="overflow-hidden position-relative img-hover-box"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=600" class="img-fluid w-100 transition-transform" alt="Event Work"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Packages Layout -->
+    <section id="services" class="py-5 bg-black-50 border-top border-bottom border-secondary">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="text-uppercase fw-bold tracking-wide">Services & Packages</h2>
+                <div class="hr-line mx-auto bg-light my-3" style="width: 50px; height: 2px;"></div>
+                <p class="text-secondary small">Every session is designed to give you a comfortable, confident, and premium experience.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Package 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark border-secondary h-100 rounded-0 p-4">
+                        <h4 class="text-uppercase fw-bold text-light mb-3">Portrait Session</h4>
+                        <p class="text-secondary small mb-4">Perfect for personal branding, birthdays, or lifestyle shoots.</p>
+                        <hr class="border-secondary mt-auto mb-4">
+                        <ul class="list-unstyled text-secondary small space-y-2">
+                            <li class="mb-2"><i class="bi bi-check2 text-light me-2"></i> 1–2 hour session</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-light me-2"></i> Professionally edited images</li>
+                            <li><i class="bi bi-check2 text-light me-2"></i> Online delivery</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark border-secondary h-100 rounded-0 p-4">
+                        <h4 class="text-uppercase fw-bold text-light mb-3">Event Coverage</h4>
+                        <p class="text-secondary small mb-4">Capture your special moments as they happen seamlessly.</p>
+                        <hr class="border-secondary mt-auto mb-4">
+                        <ul class="list-unstyled text-secondary small">
+                            <li class="mb-2"><i class="bi bi-check2 text-light me-2"></i> Coverage (1–3 hours or more)</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-light me-2"></i> Edited images</li>
+                            <li><i class="bi bi-check2 text-light me-2"></i> Fast delivery turnaround</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Package 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-dark border-secondary h-100 rounded-0 p-4">
+                        <h4 class="text-uppercase fw-bold text-light mb-3">Home / Family Session</h4>
+                        <p class="text-secondary small mb-4">For intimate indoor portraits with full premium lighting setup.</p>
+                        <hr class="border-secondary mt-auto mb-4">
+                        <ul class="list-unstyled text-secondary small">
+                            <li class="mb-2"><i class="bi bi-check2 text-light me-2"></i> Family & children portraits</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-light me-2"></i> Professional portable lighting</li>
+                            <li><i class="bi bi-check2 text-light me-2"></i> Edited images</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value Highlight Banner -->
+            <div class="bg-dark border border-secondary text-center p-4 mt-4 max-w-lg mx-auto">
+                <span class="badge bg-light text-dark rounded-0 text-uppercase tracking-wider px-2 py-1 mb-2">Best Value</span>
+                <h5 class="text-uppercase fw-bold mb-2">Full Package Combo</h5>
+                <p class="text-secondary small mb-0">Combines a full dynamic portrait session + premium continuous event coverage.</p>
+            </div>
+
+            <div class="text-center mt-5">
+                <p class="text-secondary small italic mb-3">Note: For detailed pricing and custom packages, please click below or send a message.</p>
+                <a href="booking.html" class="btn btn-outline-light rounded-0 text-uppercase tracking-wider px-4">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page Section -->
+    <section id="about" class="py-5">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=600" class="img-fluid grayscale-profile border border-secondary" alt="Precious Portrait">
+                </div>
+                <div class="col-lg-7">
+                    <span class="text-uppercase tracking-widest text-light d-block mb-2">Behind the Lens</span>
+                    <h2 class="text-uppercase fw-bold mb-4">About Me</h2>
+                    <p class="text-light">Hi, I’m Precious, the photographer behind Presh Visuals.</p>
+                    <p class="text-light">Photography for me is more than just taking pictures — it’s about capturing moments, emotions, and confidence in a way that feels natural and beautiful.</p>
+                    <p class="text-light">I love creating soft, timeless, and stylish images that make my clients feel their absolute best. Whether it’s a portrait session or a special event, my goal is to tell your story in the most authentic way possible.</p>
+                    <p class="text-light mb-4">When you shoot with me, you’re not just getting pictures — you’re getting an experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-black-50 border-top border-bottom border-secondary">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="text-uppercase fw-bold tracking-wide">What My Clients Say</h2>
+                <div class="hr-line mx-auto bg-light my-3" style="width: 50px; height: 2px;"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 border border-secondary bg-dark text-center h-100 d-flex flex-column justify-content-center">
+                        <p class="italic text-light mb-0 ">“She did a fantastic job ”</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border border-secondary bg-dark text-center h-100 d-flex flex-column justify-content-center">
+                        <p class="italic text-light mb-0">“Best in town!”</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border border-secondary bg-dark  text-center h-100 d-flex flex-column justify-content-center">
+                        <p class="italic text-light mb-0">“I felt so confident during my shoot — I love my pictures so much!”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page Section -->
+    <section id="contact" class="py-5 text-center">
+        <div class="container py-4 max-w-md">
+            <h2 class="text-uppercase fw-bold tracking-wide mb-2">Let’s Work Together</h2>
+            <div class="hr-line mx-auto bg-light my-3" style="width: 50px; height: 2px;"></div>
+            <p class="text-secondary small mb-5">Ready to book or have questions? I’d love to hear from you.</p>
+
+            <div class="row justify-content-center text-start mb-5 g-3 px-3">
+                <div class="col-12 border-bottom border-secondary pb-3 d-flex justify-content-between align-items-center">
+                    <span class="text-uppercase tracking-wider small text-secondary">Instagram</span>
+                    <a href="https://www.instagram.com/preshvisuals_?igsh=MWlxY2p1ZTU3NzMyNA%3D%3D&utm_source=qr" target="_blank" class="text-light text-decoration-none hover-white">@preshvisuals</a>
+                </div>
+                <div class="col-12 border-bottom border-secondary pb-3 d-flex justify-content-between align-items-center">
+                    <span class="text-uppercase tracking-wider small text-secondary">Email</span>
+                    <a href="mailto:Olugbekoprecious@gmail.com" class="text-light text-decoration-none hover-white">Olugbekoprecious@gmail.com</a>
+                </div>
+                <div class="col-12 border-bottom border-secondary pb-3 d-flex justify-content-between align-items-center">
+                    <span class="text-uppercase tracking-wider small text-secondary">WhatsApp</span>
+                    <span class="text-light"> +234 8*********</span>
+                </div>
+            </div>
+
+            <!-- Instant Access Trigger Interface Buttons -->
+            <div class="d-grid gap-3 max-w-sm mx-auto">
+                <a href="https://wa.me/2348072279469" target="_blank" class="btn btn-outline-success rounded-0 text-uppercase tracking-wider fw-bold py-2">
+                    <i class="bi bi-whatsapp me-2"></i> Chat on WhatsApp
+                </a>
+                <a href="booking.html" class="btn btn-light rounded-0 text-uppercase tracking-wider fw-bold py-2">
+                    Proceed to Booking Form
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Module -->
+    <footer class="bg-black py-4 text-center text-secondary small border-top border-secondary">
+        <div class="container">
+            <p class="mb-2 fw-bold text-uppercase tracking-wider text-light">Presh Visuals &copy; 2026</p>
+            <p class="small text-secondary mb-3">Capturing moments that feel like you.</p>
+            <div class="d-flex justify-content-center gap-3 small text-uppercase tracking-wide">
+                <a href="#home" class="text-reset text-decoration-none hover-white">Home</a> | 
+                <a href="#portfolio" class="text-reset text-decoration-none hover-white">Portfolio</a> | 
+                <a href="#services" class="text-reset text-decoration-none hover-white">Services</a> | 
+                <a href="booking.html" class="text-reset text-decoration-none hover-white">Book</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

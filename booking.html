@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session | Presh Visuals</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS Styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-light d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary">
+        <div class="container">
+            <a class="navbar-brand fw-bold tracking-widest text-uppercase" href="index.html">Presh Visuals</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="booking.html">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dedicated Booking Engine Block -->
+    <main class="container my-auto pt-5 mt-5 flex-grow-1">
+        <div class="row justify-content-center py-5">
+            <div class="col-lg-8">
+                <div class="text-center mb-5">
+                    <span class="text-uppercase tracking-widest text-secondary small d-block mb-2">Secure your calendar spot</span>
+                    <h1 class="text-uppercase fw-bold tracking-wide display-6">Book a Session</h1>
+                    <div class="hr-line mx-auto bg-light my-3" style="width: 50px; height: 2px;"></div>
+                    <p class="text-secondary small">Fill in your details and I’ll get back to you as soon as possible.</p>
+                </div>
+
+                <!-- Complete Layout Form Linked dynamically to Formspree mrednygz -->
+                <form id="contactForm">
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label text-uppercase small tracking-wider text-secondary">Full Name</label>
+                            <input type="text" name="full_name" class="form-line-input bg-transparent border-0 border-bottom border-secondary w-100 text-light py-2 px-1 focus-none" id="name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label text-uppercase small tracking-wider text-secondary">Phone Number (WhatsApp Preferred)</label>
+                            <input type="tel" name="phone_whatsapp" class="form-line-input bg-transparent border-0 border-bottom border-secondary w-100 text-light py-2 px-1 focus-none" id="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <label for="email" class="form-label text-uppercase small tracking-wider text-secondary">Email Address</label>
+                            <input type="email" name="_replyto" class="form-line-input bg-transparent border-0 border-bottom border-secondary w-100 text-light py-2 px-1 focus-none" id="email" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="shootType" class="form-label text-uppercase small tracking-wider text-secondary">Type of Shoot</label>
+                            <select name="type_of_shoot" class="form-line-input bg-transparent border-0 border-bottom border-secondary w-100 text-secondary py-2 px-1 focus-none bg-dark" id="shootType" required>
+                                <option value="" disabled selected hidden>Select context...</option>
+                                <option value="portrait" class="text-light">Portrait Session</option>
+                                <option value="event" class="text-light">Event Coverage</option>
+                                <option value="studio" class="text-light">Studio Photography</option>
+                                <option value="graduation-thanksgiving" class="text-light">Graduation & Thanksgiving Shoot</option>
+                                <option value="other" class="text-light">Other (Please specify below)</option>
+                            </select>
+                        </div>
+                        <div class="col-12 d-none" id="otherShootContainer">
+                            <label for="otherShootInput" class="form-label text-uppercase small tracking-wider text-secondary">Please specify your shoot type</label>
+                            <input type="text" name="other_shoot_details" id="otherShootInput" class="form-line-input bg-transparent border-0 border-bottom border-secondary w-100 text-light py-2 px-1 focus-none" placeholder="Describe your custom shoot type...">
+                        </div>
+                    </div>
+
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6">
+                            <label for="datetime" class="form-label text-uppercase small tracking-wider text-secondary">Preferred Date & Time</label>
+                            <input type="datetime-local" name="preferred_date_time" class="form-line-input bg-transparent border-0 border-bottom border-secondary w-100 text-light py-2 px-1 focus-none text-uppercase small" id="datetime" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="location" class="form-label text-uppercase small tracking-wider text-secondary">Location / Studio Address</label>
+                            <input type="text" name="location_details" class="form-line-input bg-transparent border-0 border-bottom border-secondary w-100 text-light py-2 px-1 focus-none" id="location" placeholder="e.g., Outdoor, Home Studio, Specific Venue Address..." required>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="message" class="form-label text-uppercase small tracking-wider text-secondary">Additional Notes</label>
+                        <textarea name="additional_notes" class="form-line-input bg-transparent border-0 border-bottom border-secondary w-100 text-light py-2 px-1 focus-none" id="message" rows="4" placeholder="Any special requests, dress themes, or creative preferences..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" id="submitBtn" class="btn btn-light w-100 rounded-0 text-uppercase tracking-wider fw-bold py-3">
+                        Submit Booking Request
+                    </button>
+                    
+                    <!-- Dynamic Success Message matching client copywriting specification -->
+                    <div id="formStatus" class="mt-4 text-center text-uppercase tracking-wide d-none"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-4 text-center text-secondary small border-top border-secondary mt-auto">
+        <div class="container">
+            Presh Visuals &copy; 2026. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Script Components Linkage -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
